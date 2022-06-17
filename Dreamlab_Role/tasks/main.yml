@@ -1,0 +1,24 @@
+    - name: create dirctory under a specific path
+      mymodule:
+        path: foo/bar/dir
+        state: create_dir
+    - name: create file under a specific path
+      mymodule:
+        path: foo/bar/dir/shalom.py
+        state: create_file
+    - name: validate if path exist, if not raise an error
+      mymodule:
+        path: foo/bar/dir/
+        state: validator
+    - name: delete file under a specific path
+      mymodule:
+        path: foo/bar/dir/shalom.py
+        state: delete_file
+    - name: delete directory under a specific path
+      mymodule:
+        path: foo/bar/dir/
+        state: delete_dir
+    - name: validate if path exist, if not raise an error
+      mymodule:
+        path: foo/bar/dir/
+        state: validator

@@ -1,0 +1,4 @@
+- name: Dreamlab playbook
+  hosts: localhost
+  roles:
+    - Dreamlab_role
